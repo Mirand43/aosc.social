@@ -6,6 +6,19 @@ import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
 
 function Headline({ ...rest }) {
+
+  var language=[
+    ["Criando um impacto","Creating an significant","Créer un significatif"],
+    [" significativo"," impact", " impact"],
+    [" na inovação tecnológica do país."," in the technological innovation of the country."," dans l'innovation technologique du pays."],
+    ["A nossa missão é promover o desenvolvimento e adoção de Free and Open-source Software(FOSS) em Angola.","Our mission is to promote the development and adoption of Free and Open-source Software (FOSS) in Angola.","Notre mission est de promouvoir le développement et l'adoption de logiciels libres et open source (FOSS) en Angola."],
+    ["Saiba Mais", "Learn More","En savoir plus"],
+    ["Junte-se a mais de 2,700 membros","Join over 2,700 members", "Rejoignez plus de 2 700 membres"],
+    ["Software Livre", "Free Software","Logiciel Libre"],
+    ["Colaboração","Collaboration","Collaboration"],
+    ["",,],
+    ["",,],
+  ]
   return (
     <section
       className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start pt-32 "
@@ -18,14 +31,12 @@ function Headline({ ...rest }) {
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.5 }}
         >
-          Criando um impacto{" "}
-          <br className="hidden xl:block" /> significativo
-          na inovação tecnológica do país.
+          {language[0][2]}{" "}
+          <br className="hidden xl:block" /> {language[1][2]}
+          {language[2][2]}
         </motion.h1>
         <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-          A nossa missão é promover o desenvolvimento e
-          adoção de Free and Open-source Software(FOSS) em
-          Angola.
+        {language[3][2]}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
@@ -42,7 +53,7 @@ function Headline({ ...rest }) {
             delay={0.8}
             className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-            Saiba Mais
+            {language[4][2]}
           </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
@@ -84,7 +95,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 2,700 membros
+          {language[5][2]}
           </span>
         </div>
       </div>
@@ -111,7 +122,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Software Livre
+          {language[6][2]}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -123,7 +134,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Colaboração
+          {language[7][2]}
         </motion.span>
         <Image
           src={"/hero.png"}

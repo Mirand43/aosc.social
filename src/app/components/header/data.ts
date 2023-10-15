@@ -1,12 +1,20 @@
+var language = [
+    ["Início","Start","Début"],
+    ["Motivações","Motivations","Motivations"],
+    ["Equipa","Team","Équipe"],
+    ["",,],
+    ["",,],
+]
+
 export const MENU = [
   {
     id: 1,
-    text: "Início",
+    text: language[0][0],
     url: "top",
   },
   {
     id: 2,
-    text: "Motivações",
+    text: language[1][0] ,
     url: "motivations",
   },
   {
@@ -16,7 +24,7 @@ export const MENU = [
   },
   {
     id: 4,
-    text: "Equipa",
+    text: language[2][0],
     url: "our-team",
   },
   {

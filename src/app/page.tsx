@@ -12,7 +12,12 @@ import MobileHeader from "./components/header/mobile";
 import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
 
-export default function Home() {
+export default function Home(){
+  
+  var language =[
+    ["Participe agora do primeiro evento presencial da Angola Open Source Commnunity em Luanda.","Join now the first in-person event of the Angola Open Source Community in Luanda.","Rejoignez dès maintenant le premier événement en personne de la Communauté Open Source d'Angola à Luanda."],
+  ]
+
   return (
     <main
       data-scroll-container
@@ -22,8 +27,7 @@ export default function Home() {
         <i>🇦🇴</i>
         <span className="text-white">
           {" "}
-          Participe agora do primeiro evento presencial da
-          Angola Open Source Commnunity em Luanda.
+          {language[0][0]}
         </span>
       </div>
 
