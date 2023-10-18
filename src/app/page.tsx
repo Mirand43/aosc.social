@@ -30,6 +30,7 @@ export default function Home() {
     textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
+
   };
 
   return (
@@ -52,6 +53,21 @@ export default function Home() {
           </div>
         )}
       </div>
+
+       {/* <div>
+        {isVisible && (
+          <div  style={divStyle} className="gap-2 items-center justify-center pointer-events-none select-none z-50 fixed top-0 bg-violet-600 right-0 left-0 p-6 py-2 lg:flex">
+            <i>🇦🇴</i>
+            <span className="text-white">
+              {" "}
+              {language[0][0]}
+            </span>
+            <button onClick={toggleVisibility} className="close-button pointer-events-auto  ">
+            X
+          </button>
+          </div>
+        )}
+      </div> */}
 
       <Header data-scroll />
       <MobileHeader items={MENU} />

@@ -6,8 +6,7 @@ import { MOTIVATIONS } from "./data";
 function Motivations({ className, ...rest }: any) {
   return (
     <section
-      className={twMerge(
-        "flex flex-col items-center gap-12 px-6 w-full xl:py-[200px]  bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom w-screen",
+      className={twMerge("flex flex-col items-center gap-12 px-6 w-full xl:py-[200px]  bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom w-screen",
         className,
       )}
       {...rest}
